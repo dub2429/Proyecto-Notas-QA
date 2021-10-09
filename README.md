@@ -1,4 +1,4 @@
-# Segundo Proyecto Programado #
+# Proyecto Programado - Analisis de la Calidad de Software #
 
 ## Documentación técnica ##
 
