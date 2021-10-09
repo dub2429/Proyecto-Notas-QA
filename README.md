@@ -1,4 +1,4 @@
-# Proyecto Programado - Analisis de la Calidad de Software #
+# Proyecto Programado - Análisis de la Calidad de Software #
 
 ## Documentación técnica ##
 
