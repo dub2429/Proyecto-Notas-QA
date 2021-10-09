@@ -1,0 +1,9 @@
+CREATE TABLE note (
+  id INT IDENTITY PRIMARY KEY,
+  title VARCHAR(255) DEFAULT NULL,
+  content VARCHAR(255) DEFAULT NULL,
+  user_id INT NOT NULL,
+  CONSTRAINT fk_user FOREIGN KEY (user_id)
+          REFERENCES user (id)
+
+);
