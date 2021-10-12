@@ -2,6 +2,7 @@
 
 ## Estudiantes:
 David Umaña Blanco - 2016175133
+
 Briana Monge Quesada - 2018102426
 
 ## Documentación técnica ##
