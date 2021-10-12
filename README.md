@@ -1,5 +1,9 @@
 # Proyecto Programado - Análisis de la Calidad de Software #
 
+## Estudiantes:
+David Umaña Blanco - 2016175133
+Briana Monge Quesada - 2018102426
+
 ## Documentación técnica ##
 
 ### Instalación de herramientas ###
