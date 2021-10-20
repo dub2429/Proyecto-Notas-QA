@@ -36,6 +36,29 @@ public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
     }
 
     @Override
+    public boolean editTitle(Note note, String title){
+        String sql = "update note set title = ? where user_id = ?";
+        getJdbcTemplate().update(connection -> {
+            PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1, title);
+            ps.setLong(2, note.getUserId());
+            return ps;
+        });
+        return true;
+    }
+
+    @Override
+    public void editContent(Note note, String content){
+        String sql = "update note set content = ? where user_id = ?";
+        getJdbcTemplate().update(connection -> {
+            PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1, content);
+            ps.setLong(2, note.getUserId());
+            return ps;
+        });
+    }
+
+    @Override
     public Boolean existsByTitle(String title) {
         String sql = "select count(id) from note where title = ?";
 
@@ -45,6 +68,5 @@ public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
 
         return count >= 1;
     }
-
 
 }
