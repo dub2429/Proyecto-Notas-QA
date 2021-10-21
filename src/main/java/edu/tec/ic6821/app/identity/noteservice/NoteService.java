@@ -9,5 +9,6 @@ import java.util.Optional;
 
 public interface NoteService {
     Optional<Note> create(String title, String content, Long userId);
+    void deleteNote(long noteId);
 }
 

@@ -29,4 +29,9 @@ public class NoteServiceImpl implements NoteService {
             return Optional.of(noteDao.create(note));
         }
     }
+
+    @Override
+    public void deleteNote(long noteId){
+        noteDao.deleteNote(noteId);
+    }
 }
