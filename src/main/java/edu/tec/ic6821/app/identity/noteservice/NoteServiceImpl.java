@@ -29,4 +29,20 @@ public class NoteServiceImpl implements NoteService {
             return Optional.of(noteDao.create(note));
         }
     }
+
+    @Override
+    public boolean editTitle(Note note, String title){
+        Boolean titleAlreadyExists = noteDao.existsByTitle(title);
+        if (titleAlreadyExists) {
+            return false;
+        } else {
+            noteDao.editTitle(note,title);
+            return true;
+        }
+    }
+
+    @Override
+    public void editContent(Note note, String content) {
+        noteDao.editContent(note,content);
+    }
 }

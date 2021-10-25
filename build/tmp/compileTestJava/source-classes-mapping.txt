@@ -1,20 +1,20 @@
 edu/tec/ic6821/app/users/UserControllerTests.java
  edu.tec.ic6821.app.users.UserControllerTests
-edu/tec/ic6821/app/notetests/NoteDaoTest.java
- edu.tec.ic6821.app.notetests.NoteDaoTest
 edu/tec/ic6821/app/common/EmailServiceTests.java
  edu.tec.ic6821.app.common.EmailServiceTests
-edu/tec/ic6821/app/users/UserDaoTests.java
- edu.tec.ic6821.app.users.UserDaoTests
+edu/tec/ic6821/app/notetests/NoteDaoTest.java
+ edu.tec.ic6821.app.notetests.NoteDaoTest
 edu/tec/ic6821/app/greetings/GreetingControllerTests.java
  edu.tec.ic6821.app.greetings.GreetingControllerTests
+edu/tec/ic6821/app/users/UserDaoTests.java
+ edu.tec.ic6821.app.users.UserDaoTests
 edu/tec/ic6821/app/ApplicationTests.java
  edu.tec.ic6821.app.ApplicationTests
+edu/tec/ic6821/app/notetests/NoteControllerTest.java
+ edu.tec.ic6821.app.notetests.NoteControllerTest
 edu/tec/ic6821/app/users/UserServiceTests.java
  edu.tec.ic6821.app.users.UserServiceTests
  edu.tec.ic6821.app.users.UserServiceTests$UserServiceTestsConfiguration
-edu/tec/ic6821/app/notetests/NoteControllerTest.java
- edu.tec.ic6821.app.notetests.NoteControllerTest
 edu/tec/ic6821/app/notetests/NoteServiceTest.java
  edu.tec.ic6821.app.notetests.NoteServiceTest
  edu.tec.ic6821.app.notetests.NoteServiceTest$NoteServiceTestsConfiguration
