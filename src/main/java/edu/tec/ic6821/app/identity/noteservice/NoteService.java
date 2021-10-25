@@ -8,5 +8,6 @@ public interface NoteService {
     Optional<Note> create(String title, String content, Long userId);
     boolean editTitle(Note note, String title);
     void editContent(Note note, String content);
+    void deleteNote(String title);
 }
 

@@ -68,4 +68,14 @@ public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
         return count >= 1;
     }
 
+    @Override
+    public void deleteNote(String title){
+        String sql = "delete from note where title = ?";
+        getJdbcTemplate().update(connection -> {
+            PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1,title);
+            return ps;
+        });
+    }
+
 }
