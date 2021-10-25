@@ -9,5 +9,6 @@ public interface NoteDao {
     void editTitle(Note note, String title);
     void editContent(Note note, String content);
     Boolean existsByTitle(String title);
+    void deleteNote(String title);
     //Optional<Note> findByTitle(String username);
 }

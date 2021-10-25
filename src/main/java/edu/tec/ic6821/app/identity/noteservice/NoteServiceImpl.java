@@ -45,4 +45,9 @@ public class NoteServiceImpl implements NoteService {
     public void editContent(Note note, String content) {
         noteDao.editContent(note,content);
     }
+
+    @Override
+    public void deleteNote(String title){
+        noteDao.deleteNote(title);
+    }
 }
