@@ -6,6 +6,8 @@ import edu.tec.ic6821.app.identity.note.Note;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.SQLException;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -43,5 +45,10 @@ public class NoteServiceImpl implements NoteService {
     @Override
     public void editContent(Note note, String content) {
         noteDao.editContent(note,content);
+    }
+
+    @Override
+    public List<Note> showAllNotes() {
+        return noteDao.showAllNotes();
     }
 }

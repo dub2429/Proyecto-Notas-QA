@@ -5,11 +5,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
-import java.sql.PreparedStatement;
-import java.sql.Statement;
+import javax.sql.RowSet;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Component
 public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
@@ -56,6 +60,20 @@ public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
             ps.setLong(2, note.getUserId());
             return ps;
         });
+    }
+
+    @Override
+    public List<Note> showAllNotes() {
+        List<Note> notes = new ArrayList<Note>();
+        String sql = "select title, content, user_id from note";
+
+        SqlRowSet resultSet = getJdbcTemplate().queryForRowSet(sql);
+
+        while (resultSet.next()) {
+            Note note = new Note(resultSet.getString("title"), resultSet.getString("content"), resultSet.getInt("user_id"));
+            notes.add(note);
+        }
+        return notes;
     }
 
     @Override

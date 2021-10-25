@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.276s</div>
+<div class="counter">0.161s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">givenValidCredentials_whenCreateNote_SendNote</td>
-<td class="success">0.011s</td>
+<td class="success">0.010s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenValidCredentials_whenSignUp_SendNote</td>
-<td class="success">0.265s</td>
+<td class="success">0.151s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,12 +92,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2021-10-17 17:21:50.157  INFO 7816 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.tec.ic6821.app.notetests.NoteControllerTest], using SpringBootContextLoader
-2021-10-17 17:21:50.157  INFO 7816 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [edu.tec.ic6821.app.notetests.NoteControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2021-10-17 17:21:50.157  INFO 7816 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [edu.tec.ic6821.app.notetests.NoteControllerTest]: NoteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2021-10-17 17:21:50.204  INFO 7816 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration edu.tec.ic6821.app.Application for test class edu.tec.ic6821.app.notetests.NoteControllerTest
-2021-10-17 17:21:50.204  INFO 7816 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2021-10-17 17:21:50.204  INFO 7816 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2a781d01, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@78390727, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3c1e2f63, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@eef0458, org.springframework.test.context.support.DirtiesContextTestExecutionListener@64958091, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5425a31b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@198dfbcb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6f36e166, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@27ef6519, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5eab3784, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@280edc39, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@706b358f]
+<pre>2021-10-24 19:25:54.170  INFO 6508 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.tec.ic6821.app.notetests.NoteControllerTest], using SpringBootContextLoader
+2021-10-24 19:25:54.170  INFO 6508 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [edu.tec.ic6821.app.notetests.NoteControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-24 19:25:54.170  INFO 6508 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [edu.tec.ic6821.app.notetests.NoteControllerTest]: NoteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-24 19:25:54.217  INFO 6508 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration edu.tec.ic6821.app.Application for test class edu.tec.ic6821.app.notetests.NoteControllerTest
+2021-10-24 19:25:54.217  INFO 6508 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-10-24 19:25:54.217  INFO 6508 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3a41ae93, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6553d1e5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3683fe47, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3d4ca735, org.springframework.test.context.support.DirtiesContextTestExecutionListener@aceb339, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7169977c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@58b12ed0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1c4ffc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7f3463bd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@42dbc950, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@134da875, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@71cc664f]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -107,19 +107,19 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.2.RELEASE)
 
-2021-10-17 17:21:50.298  INFO 7816 --- [    Test worker] e.t.i.app.notetests.NoteControllerTest   : Starting NoteControllerTest on DESKTOP-BBT0BUV with PID 7816 (started by Brenda in C:\Users\Brenda\Desktop\Proyecto QA\Proyecto-Notas-QA)
-2021-10-17 17:21:50.298  INFO 7816 --- [    Test worker] e.t.i.app.notetests.NoteControllerTest   : No active profile set, falling back to default profiles: default
-2021-10-17 17:21:50.985  INFO 7816 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$cc12699] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-17 17:21:51.001  INFO 7816 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-17 17:21:51.001  INFO 7816 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7cfc0d6c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-17 17:21:51.017  INFO 7816 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$3195c94b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-17 17:21:51.017  INFO 7816 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-17 17:21:52.063  INFO 7816 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23af53e7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4bbb6c82, org.springframework.security.web.header.HeaderWriterFilter@369f2396, org.springframework.web.filter.CorsFilter@191e1863, org.springframework.security.web.authentication.logout.LogoutFilter@3e23f807, edu.tec.ic6821.app.identity.config.JwtAuthTokenFilter@5b12f95d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@95cd584, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4690d4aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@686c07de, org.springframework.security.web.session.SessionManagementFilter@63b37f00, org.springframework.security.web.access.ExceptionTranslationFilter@178ab5e4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@216f761d]
-2021-10-17 17:21:52.579  INFO 7816 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-10-17 17:21:53.095  INFO 7816 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2021-10-17 17:21:53.095  INFO 7816 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2021-10-17 17:21:53.126  INFO 7816 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 31 ms
-2021-10-17 17:21:53.204  INFO 7816 --- [    Test worker] e.t.i.app.notetests.NoteControllerTest   : Started NoteControllerTest in 3.0 seconds (JVM running for 37.073)
+2021-10-24 19:25:54.295  INFO 6508 --- [    Test worker] e.t.i.app.notetests.NoteControllerTest   : Starting NoteControllerTest on DESKTOP-BBT0BUV with PID 6508 (started by Brenda in C:\Users\Brenda\Desktop\Proyecto QA\Proyecto-Notas-QA)
+2021-10-24 19:25:54.295  INFO 6508 --- [    Test worker] e.t.i.app.notetests.NoteControllerTest   : No active profile set, falling back to default profiles: default
+2021-10-24 19:25:54.764  INFO 6508 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$750efe7b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 19:25:54.764  INFO 6508 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 19:25:54.764  INFO 6508 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1e59aead' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 19:25:54.779  INFO 6508 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$99e3a12d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 19:25:54.795  INFO 6508 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 19:25:55.436  INFO 6508 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@699fdeca, org.springframework.security.web.context.SecurityContextPersistenceFilter@777da057, org.springframework.security.web.header.HeaderWriterFilter@2261246b, org.springframework.web.filter.CorsFilter@33e0b6f, org.springframework.security.web.authentication.logout.LogoutFilter@2b8b75b7, edu.tec.ic6821.app.identity.config.JwtAuthTokenFilter@268cda80, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d8faa01, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66669da7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19a95450, org.springframework.security.web.session.SessionManagementFilter@49809408, org.springframework.security.web.access.ExceptionTranslationFilter@41ef74e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cb9b405]
+2021-10-24 19:25:55.748  INFO 6508 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-24 19:25:55.983  INFO 6508 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-10-24 19:25:55.983  INFO 6508 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-10-24 19:25:55.998  INFO 6508 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 15 ms
+2021-10-24 19:25:56.061  INFO 6508 --- [    Test worker] e.t.i.app.notetests.NoteControllerTest   : Started NoteControllerTest in 1.828 seconds (JVM running for 23.654)
 </pre>
 </span>
 </div>
@@ -131,7 +131,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.6.1</a> at 17 oct. 2021 17:21:58</p>
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at 24 oct. 2021 19:25:59</p>
 </div>
 </div>
 </body>
