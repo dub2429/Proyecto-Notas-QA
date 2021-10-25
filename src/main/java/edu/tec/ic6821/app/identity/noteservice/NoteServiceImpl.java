@@ -36,7 +36,8 @@ public class NoteServiceImpl implements NoteService {
         if (titleAlreadyExists) {
             return false;
         } else {
-            return noteDao.editTitle(note,title);
+            noteDao.editTitle(note,title);
+            return true;
         }
     }
 
