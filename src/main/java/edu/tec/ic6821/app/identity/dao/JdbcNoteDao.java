@@ -13,10 +13,13 @@ import java.sql.Statement;
 import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.SQLException;
-//import java.swing.JOptionPane;
+
 
 @Component
 public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
+
+    public JdbcNoteDao() {
+    }
 
     @Autowired
     public JdbcNoteDao(DataSource dataSource) {
@@ -51,12 +54,11 @@ public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
     }
 
     @Override
-    public void deleteNote(long id){
-        String sql = "delete from note where id = ?";
+    public void deleteNote(String title){
+        String sql = "delete from note where title = ?";
         getJdbcTemplate().update(connection -> {
             PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            ps.setLong(1, id);
-
+            ps.setString(1,title);
             return ps;
         });
     }

@@ -7,6 +7,6 @@ import java.util.Optional;
 public interface NoteDao {
     Note create(Note note);
     Boolean existsByTitle(String title);
-    void deleteNote(long noteId);
+    void deleteNote(String title);
     //Optional<Note> findByTitle(String username);
 }

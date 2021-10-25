@@ -31,7 +31,7 @@ public class NoteServiceImpl implements NoteService {
     }
 
     @Override
-    public void deleteNote(long noteId){
-        noteDao.deleteNote(noteId);
+    public void deleteNote(String title){
+        noteDao.deleteNote(title);
     }
 }
