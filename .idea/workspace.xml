@@ -5,38 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d8d174-df2a-415d-b51d-494171f33ecb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.ApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.ApplicationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.common.EmailServiceTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.common.EmailServiceTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.greetings.GreetingControllerTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.greetings.GreetingControllerTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.notetests.NoteControllerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.notetests.NoteControllerTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.notetests.NoteDaoTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.notetests.NoteDaoTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.notetests.NoteServiceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.notetests.NoteServiceTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.users.UserControllerTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.users.UserControllerTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.users.UserDaoTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.users.UserDaoTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.users.UserServiceTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/edu.tec.ic6821.app.users.UserServiceTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.tec.ic6821.app.common.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.tec.ic6821.app.common.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.tec.ic6821.app.greetings.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.tec.ic6821.app.greetings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.tec.ic6821.app.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.tec.ic6821.app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.tec.ic6821.app.notetests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.tec.ic6821.app.notetests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.tec.ic6821.app.users.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/edu.tec.ic6821.app.users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.ApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.common.EmailServiceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.common.EmailServiceTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.greetings.GreetingControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.greetings.GreetingControllerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.notetests.NoteControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.notetests.NoteControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.notetests.NoteDaoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.notetests.NoteDaoTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.notetests.NoteServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.notetests.NoteServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.users.UserControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.users.UserControllerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.users.UserDaoTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.users.UserDaoTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.users.UserServiceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-edu.tec.ic6821.app.users.UserServiceTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/dao/JdbcNoteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/dao/JdbcNoteDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/dao/NoteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/dao/NoteDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/noteservice/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/noteservice/NoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/noteservice/NoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/noteservice/NoteServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +18,18 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -55,6 +37,7 @@
     <option name="directoryName" value="jlgcaj0d" />
   </component>
   <component name="ProjectId" id="1zQN2k1KdZlBN6MeKD7fbIpSKET" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

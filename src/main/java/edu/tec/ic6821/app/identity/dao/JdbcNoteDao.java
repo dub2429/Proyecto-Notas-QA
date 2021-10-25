@@ -10,6 +10,10 @@ import org.springframework.stereotype.Component;
 import javax.sql.DataSource;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
+import java.sql.DriverManager;
+import java.sql.Connection;
+import java.sql.SQLException;
+//import java.swing.JOptionPane;
 
 @Component
 public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
