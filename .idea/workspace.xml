@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84d8d174-df2a-415d-b51d-494171f33ecb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/dao/JdbcNoteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/dao/JdbcNoteDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/dao/NoteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/dao/NoteDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/noteservice/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/noteservice/NoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/noteservice/NoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tec/ic6821/app/identity/noteservice/NoteServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="84d8d174-df2a-415d-b51d-494171f33ecb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
