@@ -10,8 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-
-import java.sql.SQLException;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -45,7 +43,7 @@ public class NoteDaoTest {
     }
 
     @Test
-    public void createNotes_whenShowNotes_thenReturnListOfNotesCreated() throws SQLException {
+    public void createNotes_whenShowNotes_thenReturnListOfNotesCreated() {
         // given
         User user = new User("someuser", "123queso");
         User persistedUser = userDao.create(user);
@@ -59,6 +57,7 @@ public class NoteDaoTest {
         List<Note> notes = noteDao.showAllNotes();
 
         // then
+        assertThat(notes != null);
         assertThat(notes.get(0).getTitle()).isEqualTo(persistedNote.getTitle());
         assertThat(notes.get(1).getTitle()).isEqualTo(persistedNote2.getTitle());
     }

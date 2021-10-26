@@ -69,6 +69,9 @@ public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
 
         SqlRowSet resultSet = getJdbcTemplate().queryForRowSet(sql);
 
+        if(resultSet == null){
+            return null;
+        }
         while (resultSet.next()) {
             Note note = new Note(resultSet.getString("title"), resultSet.getString("content"), resultSet.getInt("user_id"));
             notes.add(note);
