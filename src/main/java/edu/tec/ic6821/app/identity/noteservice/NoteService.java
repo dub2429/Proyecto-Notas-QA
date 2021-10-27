@@ -11,5 +11,6 @@ public interface NoteService {
     boolean editTitle(Note note, String title);
     void editContent(Note note, String content);
     List<Note> showAllNotes();
+    void deleteNote(String title);
 }
 

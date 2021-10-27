@@ -38,7 +38,8 @@ public class NoteServiceImpl implements NoteService {
         if (titleAlreadyExists) {
             return false;
         } else {
-            return noteDao.editTitle(note,title);
+            noteDao.editTitle(note,title);
+            return true;
         }
     }
 
@@ -50,5 +51,10 @@ public class NoteServiceImpl implements NoteService {
     @Override
     public List<Note> showAllNotes() {
         return noteDao.showAllNotes();
+    }
+
+    @Override
+    public void deleteNote(String title){
+        noteDao.deleteNote(title);
     }
 }
