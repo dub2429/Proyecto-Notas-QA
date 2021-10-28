@@ -40,23 +40,23 @@ public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
     }
 
     @Override
-    public void editTitle(Note note, String title){
+    public void editTitle(long userId, String title){
         String sql = "update note set title = ? where user_id = ?";
         getJdbcTemplate().update(connection -> {
             PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, title);
-            ps.setLong(2, note.getUserId());
+            ps.setLong(2, userId);
             return ps;
         });
     }
 
     @Override
-    public void editContent(Note note, String content){
+    public void editContent(String title, String content){
         String sql = "update note set content = ? where user_id = ?";
         getJdbcTemplate().update(connection -> {
             PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1, title);
             ps.setString(1, content);
-            ps.setLong(2, note.getUserId());
             return ps;
         });
     }
