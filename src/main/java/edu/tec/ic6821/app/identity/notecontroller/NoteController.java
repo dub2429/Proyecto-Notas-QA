@@ -55,9 +55,13 @@ public class NoteController {
     public ResponseEntity<?> DeleteNoteDto(@PathVariable String title) {
         try {
             CustomUserDetails userDetails = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-            noteService.deleteNote(title);
-            return new ResponseEntity<>(HttpStatus.OK);
+            boolean deleted = noteService.deleteNote(title);
 
+            if(deleted){
+                return new ResponseEntity<>(HttpStatus.OK);
+            }
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            
         } catch (Exception e) {
             return new ResponseEntity<>(ErrorDto.from(e),
                     HttpStatus.INTERNAL_SERVER_ERROR);

@@ -54,7 +54,12 @@ public class NoteServiceImpl implements NoteService {
     }
 
     @Override
-    public void deleteNote(String title){
+    public boolean deleteNote(String title){
+        Boolean titleExists = noteDao.existsByTitle(title);
+        if(!titleExists){
+            return false;
+        }
         noteDao.deleteNote(title);
+        return true;
     }
 }
