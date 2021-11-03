@@ -33,12 +33,12 @@ public class NoteServiceImpl implements NoteService {
     }
 
     @Override
-    public boolean editTitle(long userId, String title){
-        Boolean titleAlreadyExists = noteDao.existsByTitle(title);
+    public boolean editTitle(String oldTitle, String newTitle){
+        Boolean titleAlreadyExists = noteDao.existsByTitle(newTitle);
         if (titleAlreadyExists) {
             return false;
         } else {
-            noteDao.editTitle(userId,title);
+            noteDao.editTitle(oldTitle, newTitle);
             return true;
         }
     }

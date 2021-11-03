@@ -40,23 +40,23 @@ public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
     }
 
     @Override
-    public void editTitle(long userId, String title){
-        String sql = "update note set title = ? where user_id = ?";
+    public void editTitle(String oldTitle, String newTitle){
+        String sql = "update note set title = ? where title = ?";
         getJdbcTemplate().update(connection -> {
             PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            ps.setString(1, title);
-            ps.setLong(2, userId);
+            ps.setString(1, newTitle);
+            ps.setString(2, oldTitle);
             return ps;
         });
     }
 
     @Override
     public void editContent(String title, String content){
-        String sql = "update note set content = ? where user_id = ?";
+        String sql = "update note set content = ? where title = ?";
         getJdbcTemplate().update(connection -> {
             PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            ps.setString(1, title);
             ps.setString(1, content);
+            ps.setString(2, title);
             return ps;
         });
     }
@@ -64,7 +64,7 @@ public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
     @Override
     public List<Note> showAllNotes() {
         List<Note> notes = new ArrayList<Note>();
-        String sql = "select title, content, user_id from note";
+        String sql = "select id, title, content, user_id from note";
 
         SqlRowSet resultSet = getJdbcTemplate().queryForRowSet(sql);
 
@@ -72,7 +72,7 @@ public class JdbcNoteDao extends JdbcDaoSupport implements NoteDao {
             return null;
         }
         while (resultSet.next()) {
-            Note note = new Note(resultSet.getString("title"), resultSet.getString("content"), resultSet.getInt("user_id"));
+            Note note = new Note(resultSet.getLong("id"),resultSet.getString("title"), resultSet.getString("content"), resultSet.getInt("user_id"));
             notes.add(note);
         }
         return notes;

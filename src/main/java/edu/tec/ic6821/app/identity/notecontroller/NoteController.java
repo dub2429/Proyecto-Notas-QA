@@ -52,25 +52,29 @@ public class NoteController {
 
 
     @DeleteMapping("/delete/{title}")
-    public ResponseEntity<?> DeleteNoteDto(@Valid @RequestBody String title) {
+    public ResponseEntity<?> DeleteNoteDto(@PathVariable String title) {
         try {
+            CustomUserDetails userDetails = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
             noteService.deleteNote(title);
-
             return new ResponseEntity<>(HttpStatus.OK);
+
         } catch (Exception e) {
             return new ResponseEntity<>(ErrorDto.from(e),
                     HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
-    @PutMapping("/edit/title/{userId}/{title}")
-    public ResponseEntity<?> EditNoteTitleDto(@PathVariable long userId,@PathVariable String title) {
+    @PutMapping("/edit/title/{oldTitle}/{newTitle}")
+    public ResponseEntity<?> EditNoteTitleDto(@PathVariable String oldTitle, @PathVariable String newTitle) {
         try {
             CustomUserDetails userDetails = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            boolean editTitle = noteService.editTitle(oldTitle, newTitle);
 
-            noteService.editTitle(userId, title);
+            if (editTitle) {
+                return new ResponseEntity<>(HttpStatus.OK);
+            }
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
-            return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(ErrorDto.from(e),
                     HttpStatus.INTERNAL_SERVER_ERROR);
@@ -81,44 +85,28 @@ public class NoteController {
     public ResponseEntity<?> EditNoteContentDto(@PathVariable String title,@PathVariable String content) {
         try {
             CustomUserDetails userDetails = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-
             noteService.editContent(title,content);
-
             return new ResponseEntity<>(HttpStatus.OK);
+
         } catch (Exception e) {
             return new ResponseEntity<>(ErrorDto.from(e),
                     HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
-/**
     @GetMapping("/show")
-    public ResponseEntity<?> EditNoteDto() {
+    public ResponseEntity<?> showNotes() {
         try {
             CustomUserDetails userDetails = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-            /**Optional<Note> optionalNote = noteService.create(
-                    noteDto.getTitle(),
-                    noteDto.getContent(),
-                    userDetails.getUserId());
-
             List<Note> listOfNotes = noteService.showAllNotes();
 
-            if(listOfNotes != null){
-                return new ResponseEntity<>(
-                        for(Note n : listOfNotes){
-                            n.getTitle();
-                            n.getContent();
-                        }
-                        );
-            }
+            return new ResponseEntity<>(listOfNotes, HttpStatus.OK);
 
-            return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(ErrorDto.from(e),
                     HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-    */
 
 }
 

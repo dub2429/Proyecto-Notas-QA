@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public interface NoteDao {
     Note create(Note note);
-    void editTitle(long userId, String title);
+    void editTitle(String oldTitle, String newTitle);
     void editContent(String title, String content);
     List<Note> showAllNotes();
     Boolean existsByTitle(String title);

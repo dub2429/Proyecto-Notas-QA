@@ -1,9 +1,9 @@
 edu/tec/ic6821/app/identity/dao/UserDao.java
  edu.tec.ic6821.app.identity.dao.UserDao
-edu/tec/ic6821/app/identity/service/UserServiceImpl.java
- edu.tec.ic6821.app.identity.service.UserServiceImpl
 edu/tec/ic6821/app/Application.java
  edu.tec.ic6821.app.Application
+edu/tec/ic6821/app/identity/service/UserServiceImpl.java
+ edu.tec.ic6821.app.identity.service.UserServiceImpl
 edu/tec/ic6821/app/identity/config/JwtAuthTokenFilter.java
  edu.tec.ic6821.app.identity.config.JwtAuthTokenFilter
 edu/tec/ic6821/app/common/EmailServiceImpl.java
@@ -14,12 +14,12 @@ edu/tec/ic6821/app/identity/service/AuthenticationServiceImpl.java
  edu.tec.ic6821.app.identity.service.AuthenticationServiceImpl
 edu/tec/ic6821/app/identity/dto/CredentialsDto.java
  edu.tec.ic6821.app.identity.dto.CredentialsDto
-edu/tec/ic6821/app/identity/model/User.java
- edu.tec.ic6821.app.identity.model.User
-edu/tec/ic6821/app/identity/config/JwtAuthEntryPoint.java
- edu.tec.ic6821.app.identity.config.JwtAuthEntryPoint
 edu/tec/ic6821/app/common/errors/ErrorDto.java
  edu.tec.ic6821.app.common.errors.ErrorDto
+edu/tec/ic6821/app/identity/config/JwtAuthEntryPoint.java
+ edu.tec.ic6821.app.identity.config.JwtAuthEntryPoint
+edu/tec/ic6821/app/identity/model/User.java
+ edu.tec.ic6821.app.identity.model.User
 edu/tec/ic6821/app/identity/note/Note.java
  edu.tec.ic6821.app.identity.note.Note
 edu/tec/ic6821/app/identity/service/CustomUserDetailsService.java
@@ -38,29 +38,29 @@ edu/tec/ic6821/app/identity/dao/JdbcNoteDao.java
  edu.tec.ic6821.app.identity.dao.JdbcNoteDao
 edu/tec/ic6821/app/identity/controller/UserController.java
  edu.tec.ic6821.app.identity.controller.UserController
-edu/tec/ic6821/app/identity/noteservice/NoteService.java
- edu.tec.ic6821.app.identity.noteservice.NoteService
+edu/tec/ic6821/app/identity/notecontroller/NoteController.java
+ edu.tec.ic6821.app.identity.notecontroller.NoteController
 edu/tec/ic6821/app/identity/config/WebSecurityConfig.java
  edu.tec.ic6821.app.identity.config.WebSecurityConfig
 edu/tec/ic6821/app/identity/service/AuthenticationService.java
  edu.tec.ic6821.app.identity.service.AuthenticationService
 edu/tec/ic6821/app/identity/notedto/NoteDto.java
  edu.tec.ic6821.app.identity.notedto.NoteDto
-edu/tec/ic6821/app/identity/service/UserService.java
- edu.tec.ic6821.app.identity.service.UserService
 edu/tec/ic6821/app/greetings/dto/GreetingDto.java
  edu.tec.ic6821.app.greetings.dto.GreetingDto
+edu/tec/ic6821/app/identity/service/UserService.java
+ edu.tec.ic6821.app.identity.service.UserService
 edu/tec/ic6821/app/identity/config/JwtProvider.java
  edu.tec.ic6821.app.identity.config.JwtProvider
 edu/tec/ic6821/app/identity/notedto/RegisterNoteDto.java
  edu.tec.ic6821.app.identity.notedto.RegisterNoteDto
-edu/tec/ic6821/app/identity/controller/AuthenticationController.java
- edu.tec.ic6821.app.identity.controller.AuthenticationController
 edu/tec/ic6821/app/common/EmailService.java
  edu.tec.ic6821.app.common.EmailService
+edu/tec/ic6821/app/identity/controller/AuthenticationController.java
+ edu.tec.ic6821.app.identity.controller.AuthenticationController
 edu/tec/ic6821/app/identity/noteservice/NoteServiceImpl.java
  edu.tec.ic6821.app.identity.noteservice.NoteServiceImpl
 edu/tec/ic6821/app/identity/dao/UserMapper.java
  edu.tec.ic6821.app.identity.dao.UserMapper
-edu/tec/ic6821/app/identity/notecontroller/NoteController.java
- edu.tec.ic6821.app.identity.notecontroller.NoteController
+edu/tec/ic6821/app/identity/noteservice/NoteService.java
+ edu.tec.ic6821.app.identity.noteservice.NoteService
