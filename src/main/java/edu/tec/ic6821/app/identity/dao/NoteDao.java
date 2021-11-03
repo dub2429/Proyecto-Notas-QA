@@ -9,8 +9,8 @@ import java.util.Optional;
 
 public interface NoteDao {
     Note create(Note note);
-    void editTitle(Note note, String title);
-    void editContent(Note note, String content);
+    void editTitle(String oldTitle, String newTitle);
+    void editContent(String title, String content);
     List<Note> showAllNotes();
     Boolean existsByTitle(String title);
     void deleteNote(String title);

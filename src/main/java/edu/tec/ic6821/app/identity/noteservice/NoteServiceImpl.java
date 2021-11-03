@@ -33,19 +33,19 @@ public class NoteServiceImpl implements NoteService {
     }
 
     @Override
-    public boolean editTitle(Note note, String title){
-        Boolean titleAlreadyExists = noteDao.existsByTitle(title);
+    public boolean editTitle(String oldTitle, String newTitle){
+        Boolean titleAlreadyExists = noteDao.existsByTitle(newTitle);
         if (titleAlreadyExists) {
             return false;
         } else {
-            noteDao.editTitle(note,title);
+            noteDao.editTitle(oldTitle, newTitle);
             return true;
         }
     }
 
     @Override
-    public void editContent(Note note, String content) {
-        noteDao.editContent(note,content);
+    public void editContent(String title, String content) {
+        noteDao.editContent(title,content);
     }
 
     @Override
@@ -54,7 +54,12 @@ public class NoteServiceImpl implements NoteService {
     }
 
     @Override
-    public void deleteNote(String title){
+    public boolean deleteNote(String title){
+        Boolean titleExists = noteDao.existsByTitle(title);
+        if(!titleExists){
+            return false;
+        }
         noteDao.deleteNote(title);
+        return true;
     }
 }
