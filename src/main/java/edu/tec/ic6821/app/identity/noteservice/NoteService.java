@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface NoteService {
     Optional<Note> create(String title, String content, Long userId);
     boolean editTitle(String oldTitle, String newTitle);
-    void editContent(String title, String content);
+    boolean editContent(String title, String content);
     List<Note> showAllNotes();
     boolean deleteNote(String title);
 }

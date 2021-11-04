@@ -52,7 +52,7 @@ public class NoteController {
 
 
     @DeleteMapping("/delete/{title}")
-    public ResponseEntity<?> DeleteNoteDto(@PathVariable String title) {
+    public ResponseEntity<?> DeleteNote(@PathVariable String title) {
         try {
             CustomUserDetails userDetails = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
             boolean deleted = noteService.deleteNote(title);
@@ -61,7 +61,7 @@ public class NoteController {
                 return new ResponseEntity<>(HttpStatus.OK);
             }
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-            
+
         } catch (Exception e) {
             return new ResponseEntity<>(ErrorDto.from(e),
                     HttpStatus.INTERNAL_SERVER_ERROR);
@@ -69,7 +69,7 @@ public class NoteController {
     }
 
     @PutMapping("/edit/title/{oldTitle}/{newTitle}")
-    public ResponseEntity<?> EditNoteTitleDto(@PathVariable String oldTitle, @PathVariable String newTitle) {
+    public ResponseEntity<?> EditNoteTitle(@PathVariable String oldTitle, @PathVariable String newTitle) {
         try {
             CustomUserDetails userDetails = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
             boolean editTitle = noteService.editTitle(oldTitle, newTitle);
@@ -86,11 +86,14 @@ public class NoteController {
     }
 
     @PutMapping("/edit/content/{title}/{content}")
-    public ResponseEntity<?> EditNoteContentDto(@PathVariable String title,@PathVariable String content) {
+    public ResponseEntity<?> EditNoteContent(@PathVariable String title,@PathVariable String content) {
         try {
             CustomUserDetails userDetails = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-            noteService.editContent(title,content);
-            return new ResponseEntity<>(HttpStatus.OK);
+            boolean editContent = noteService.editContent(title,content);
+            if(editContent){
+                return new ResponseEntity<>(HttpStatus.OK);
+            }
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
         } catch (Exception e) {
             return new ResponseEntity<>(ErrorDto.from(e),
